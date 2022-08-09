@@ -1,0 +1,30 @@
+.dotcontainer{
+    height: 40px;
+    padding-top: 3vh;
+    display: flex;
+    justify-content: center;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 100%;
+}
+.dot1{
+    background-color: #1abc9c;
+    animation: jump 0.5s 0.1s linear infinite;
+}
+.dot2{
+    background-color: #ffd64a;
+    animation: jump 0.5s 0.2s linear infinite;
+    margin: 0 2px;
+}
+.dot3{
+    background-color: #e067af;
+    animation: jump 0.5s 0.3s linear infinite;
+}
+@keyframes jump {
+    50%{
+        transform: translate(0,15px);
+    }
+}
